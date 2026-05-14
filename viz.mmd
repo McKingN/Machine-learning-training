@@ -1,0 +1,18 @@
+flowchart TD
+    A[What is the main question?] --> B{Long-run growth only?}
+    B -->|Yes, intuition first| C[Start with Solow]
+    B -->|No| D{Do you want an efficient benchmark with no wedges?}
+    D -->|Yes| E[Write the planner problem]
+    E --> F[Derive Euler equations and TVC]
+    F --> G[Decentralise into household, firm, prices, and market clearing]
+    G --> H{Equivalence still holds?}
+    H -->|Yes| I[Use Ramsey-Cass-Koopmans or RBC]
+    H -->|No| J[Model the wedge explicitly]
+    J --> K{Which wedge?}
+    K -->|Finite lives, debt, pensions| L[Diamond OLG]
+    K -->|Uninsured risk, wealth distribution| M[Huggett or Aiyagari]
+    K -->|Sticky prices or wages, policy rules| N[New Keynesian DSGE]
+    K -->|Collateral or balance-sheet limits| O[Kiyotaki-Moore style models]
+    K -->|Externalities or increasing returns| P[Planner and policy wedge models]
+    K -->|Heterogeneous MPCs and policy incidence| Q[HANK]
+    D -->|No, I need decentralised prices from the outset| G
